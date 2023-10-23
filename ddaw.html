@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownBtn = document.querySelector(".dropbtn");
+            var dropdownContent = document.querySelector(".dropdown-content");
+    
+            dropdownBtn.addEventListener("click", function() {
+                dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-left">
+            <img src="img/ico.gif" alt="Icono" class="menu-icon">
+            <h1>Portfolio de Sergio Acosta</h1>
+        </div>
+        <div class="menu-center">
+            <div class="dropdown">
+                <button class="dropbtn">Asignaturas</button>
+                <div class="dropdown-content">
+                    <a href="dwes.html">DWES</a>
+                    <a href="dwec.html">DWEC</a>
+                    <a href="ddaw.html">DDAW</a>
+                    <a href="diw.html">DIW</a>
+                    <a href="index.html">Volver al inicio.</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-sidebar">
+        </div>
+        <div class="main-content">
+            <div class="image-container">
+                <img src="img/ddaw.gif" alt="bienvenida">
+            </div>
+            <div class="content-container">
+                    <div class="text">
+                        <p>
+                            <h2 class='subtitulo'>Trabajos de clase</h2>
+                            <ul id="centered-list">
+                                <li><a href='https://docs.google.com/document/d/1_n-wvA5s2u40e74HBvqV0hOl3DtJGojfLzEjOjoOFbU/edit'>Apuntes DNS.</a></li>
+                                <li><a href='https://docs.google.com/document/d/19bS3L4yM0_HJX09B5aFWWuQ2WOjgVUCgK95sHub528s/edit'>Hosting.</a></li>
+                            </ul>
+                            <h2 class='subtitulo'>Presentaciones</h2>
+                            <ul id="centered-list">
+                                <li><a href='https://docs.google.com/presentation/d/1Wmg9uiGOUxJUU3KPnw_q2MlSjl0sU5tJZIbHHtRaju0/edit#slide=id.gd527f78463_0_41'>Presentación DNS.</a></li>
+                            </ul>
+                            <h2 class='subtitulo'>Proyectos web</h2>
+                            <ul id="centered-list">
+                                <li>Aqui iran. Que de momento, no hay.</li>
+                            </ul>
+                            <h2 class='subtitulo'>Recursos</h2>
+                            <ul id="centered-list">
+                                <li><a href='https://github.com/sergioacostaportocarrero'>Mi GitHub.</a></li>
+                                <li><a href='https://classroom.google.com/c/NjIyOTQwMDY5Mzky/m/NjIyOTQwMDY5NDI3/details'>Apuntes Git.</a></li>
+                                <li><a href='https://classroom.google.com/c/NjIyOTQwMDY5Mzky/m/NjI1Nzk2NzA4Mjc0/details'>Apuntes Hosting.</a></li>
+                            </ul>
+                        </p>
+                            <div class='div-pixel'>
+                                <img src="img/noface.gif">
+                            </div>
+                    </div>
+                    <div class="text"> 
+                        <p><B>¡¡¡ESTA SECCIÓN QUEDARÁ MÁS COMPACATA EN CUANTO APRENDA A HACER DESPLEGABLES!!!</B></p>
+                        <h2 class='subtitulo'>Diario de Aprendizaje.</h2>
+                        <h3 class="subsubtitulo">Hasta el día 10/10/23.</h3>
+                        <p>
+                            Durante éste mes, he repasado sobre los protocolos HTTP, HTTPs y DNS, además de aprender a trabajar en tiempo real con mi hosting a través de múltiples herramientas.
+                            Lo más importante en mi opinión ha sido el aprender qué es Git y cómo usar GitHub, ya que no tan solo es cierto que siempre se dice que es algo que siempre usaremos en
+                            el trabajo como programadores, sino que es más que aparente que es cierto y útil.
+                            <br><br>
+                            Normalmente, cuando necesito buscar información recurro a inteligencias artificiales o a la viaja confiable, el navegador de google. Para trabajar en clase, todo lo hago ya
+                            sea con Visual Code Studio, o incluso FileZilla por comodidad.
+                            <br><br>
+                            La única dificultad que he podido encotnrar es que necesito de ejemplos prácticos para llegar a entender del todo github. Es cuestión de tiempo, práctica y tutoriales de youtube el
+                            llegar a interiorizarlo como es debido.
+                        </p>
+                        <h3 class="subsubtitulo">Protocolos HTTP, HTTPS y DNS</h3>
+                        <p>
+                            <h4 class="subsubsubtitulo">¿Qué es DNS?</h4>
+                            "Domain Name Service", o sistema de nombres de dominio en español, es un sistema que utilizamos para traducir nombres de dominio en IPS y viceversa.
+                            Es decir, nos podría servir para asociar la dirección IP 192.332.32.2 con el dominio www.ejemplo.com. Los conceptos que deberemos de tener en cuenta
+                            respecto al DNS son: <b>Nombre de dominio</b>, que es el nombre legible para los humanos, <b>Dirección IP</b>, numero con el que se identifica a un 
+                            equipo o RED, <b>Servidor DNS</b>,que será el que se encarge de guardar en una BBDD las direcciones y sus dominios relacionados, y la <b>resolución DNS</b>,
+                             que es el Proceso de traducción de IPs y Nombres.
+                             <h4 class="subsubsubtitulo">Funcionamiento</h4>
+                            <ul class="custom-list">
+                                <li class="custom-list-item">
+                                    <h3>1.- Solicitud.</h3>
+                                    <p>Usuario ingresa la dirección.</p>
+                                </li>
+                                <li class="custom-list-item">
+                                    <h3>2.- Consulta.</h3>
+                                    <p>El dispositivo envía consulta DNS al servidor DNS.</p>
+                                </li>
+                                <li class="custom-list-item">
+                                    <h3>3.- Búsqueda de respuesta.</h3>
+                                    <p>El servidor DNS local consulta si tiene la respuesta en su caché. Sí la tiene, se envía de inmediato. Si no, busca la respuesta en otros servidores.
+                                        Cuando encuentra la respuesta, guarda la IP en la caché y la envía al usuario.
+                                    </p>
+                                </li>
+                                <li class="custom-list-item">
+                                    <h3>4.- Respuesta.</h3>
+                                    <p>El dispositivo del usuario establece la conexión y visualiza la web.</p>
+                                </li>
+                            </ul>
+                            <h4 class="subsubsubtitulo">Aplicaciones del Servicio.</h4>
+                           Algunas aplicaciones reales en las que se implementa y utiliza éste servicio pueden ser:
+                            <b>Correo electrónico, Autenticación de Correo, Navegación Web</b> o la <b>Implementación de VPN y Redes Privadas.</b>
+                        </p>
+                        <h3 class="subsubtitulo">HOSTING.</h3>
+                        <p>
+                            <h4 class="subsubsubtitulo">PhpStorm.</h4>
+                            1.- Accedo a mi PhpStorm.<br>
+                            2.- Creo un nuevo proyecto. (File > New project)<br>
+                            3.- Accedemos a la configuración de despliegue. ( File > Settings > Deployment )<br>
+                            4.- Hacemos click en ‘+’ para añadir una nueva configuración. <br>
+                            5.- En nuestro caso, haremos click en FTP y procedemos a configurarlo.<br>
+                            <img id="phpimg" src="img/phpstorm.png">
+                            <h4 class="subsubsubtitulo">VC Studio.</h4>
+                            1.- Seleccionar área de trabajo/proyectos ../xampp/htdocs <br>
+                            2.- Instalar extensión SFTP <br>
+                            3.-Configurar json SFTP:Config, con los parámetros del servicio FTP
+                            de cada virtualhost. <br>
+                            4.- Agregar proyecto/s al Hosting, mediante “Sync Local -> Remote” <br>
+                        </p>
+                        <h3 class="subsubtitulo">GIT Y GITHUB.</h3>
+                        <h4 class="subsubsubtitulo">¿Qué es GIT?</h4>
+                        <p> Es un sistema de control de versiones distribuido que funciona localmente y gestiona versiones del código.
+                            y puede operar sin conexión a Internet.</p>
+                        <h4 class="subsubsubtitulo">¿Qué es GITHUB?</h4>
+                        <p>Es una plataforma web que utiliza Git 
+                             que ofrece servicios de alojamiento para proyectos.
+                            Facilita la colaboración, revisión de código y gestión de proyectos 
+                            y requiere conexión a Internet.</p>
+                        <h4 class="subsubsubtitulo">Comandos.</h4>
+                        <ul class="custom-list">
+                            <li class="custom-list-item">
+                                <h3>Comandos de ayuda.</h3>
+                                <p>
+                                    1.- git help <br>
+                                    2.- git log (--oneline) <br>
+                                    3.- git status <br>
+                                </p>
+                            </li>
+                            <li class="custom-list-item">
+                                <h3>Comandos básicos.</h3>
+                                <p>
+                                    1.- git innit: Inicializa el staging y repositorio local. <br>
+                                    2.- git add: añadimos archivos al staging. <br>
+                                    3.- git commit: envia los archivos añadidos al repositorio local <br>
+                                    4.- git push: enviamos los cambios al servidor remoto <br>
+                                </p>
+                            </li>
+                            <li class="custom-list-item">
+                                <h3>Comandos extra.</h3>
+                                <p>
+                                    1.- git remote: Comandos relacionados con el repositorio remoto de Github. <br>
+                                    2.- git branch: Crear una rama. <br>
+                                    3.- git checkout: Cambiar de rama. <br>
+                                    4.- git branch -a: Comprobar ramas. <br>
+                                </p>
+                            </li>
+                            <li class="custom-list-item">
+                                <h3>Comandos Rollback.</h3>
+                                <p>
+                                    1.- git clean. <br>
+                                    2.- git reset. <br>
+                                    3.- git clean. <br>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+                <div class="footer">
+                    <p>Aqui acabara por ir mi informacion de contacto... Cuando la tenga, ademas de un github precioso.</p>
+                </div>
+        </div>
+        <div class="right-sidebar">
+        </div>
+    </div>
+</body>
+</html>
